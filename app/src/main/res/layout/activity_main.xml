@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlHead"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/fb_logo" />
+
+            <ImageView
+                android:id="@+id/ivMessenger"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:padding="8dp"
+                android:src="@drawable/messenger_logo_2"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toLeftOf="@+id/ivMessenger"
+                android:src="@drawable/search_logo"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
