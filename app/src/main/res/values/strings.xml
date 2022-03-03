@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Facebook UI</string>
+
+    <string name="think"> Whats on your mind? </string>
 </resources>

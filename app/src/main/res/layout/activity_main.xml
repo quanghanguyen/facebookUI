@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
+        android:id="@+id/rlTitle"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:background="@color/white">
@@ -37,7 +38,7 @@
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
-                android:padding="8dp"
+                android:padding="10dp"
                 android:src="@drawable/messenger_logo_2" />
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -54,9 +55,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:layout_toLeftOf="@+id/ivMessenger"
-                android:padding="8dp"
+                android:padding="10dp"
                 android:src="@drawable/search_logo" />
-
 
         </RelativeLayout>
 
@@ -88,7 +88,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="40dp"
                 android:layout_toRightOf="@+id/ivHome"
-                android:src="@drawable/ic_baseline_video_library_24"/>
+                android:src="@drawable/ic_baseline_video_library_24" />
 
             <ImageView
                 android:id="@+id/ivMore"
@@ -96,18 +96,45 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="15dp"
-                android:src="@drawable/ic_baseline_notes_24"/>
+                android:src="@drawable/ic_baseline_notes_24" />
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/notifications"
-                android:layout_toLeftOf="@+id/ivMore"
                 android:layout_marginRight="40dp"
-
+                android:layout_toLeftOf="@+id/ivMore"
+                android:src="@drawable/notifications" />
 
         </RelativeLayout>
 
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rlTitle"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civAvatar"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/avatar_4" />
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/civAvatar"
+            android:background="@drawable/border"
+            android:hint="@string/think"
+            android:textColorHint="@color/black"
+            android:layout_centerVertical="true"/>
 
     </RelativeLayout>
 

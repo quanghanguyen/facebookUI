@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Desktop D/learn/FacebookUI/app/src/main/res/drawable/border.xml" value="0.2203125" />
+        <entry key="..\:/Desktop D/learn/FacebookUI/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2203125" />
+        <entry key="..\:/Desktop D/learn/FacebookUI/app/src/main/res/drawable/ic_baseline_notes_24.xml" value="0.2203125" />
+        <entry key="..\:/Desktop D/learn/FacebookUI/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.2203125" />
+        <entry key="..\:/Desktop D/learn/FacebookUI/app/src/main/res/drawable/ic_baseline_shopping_bag_24.xml" value="0.2203125" />
+        <entry key="..\:/Desktop D/learn/FacebookUI/app/src/main/res/drawable/ic_baseline_video_library_24.xml" value="0.2203125" />
+        <entry key="..\:/Desktop D/learn/FacebookUI/app/src/main/res/drawable/notifications.xml" value="0.2203125" />
         <entry key="..\:/Desktop D/learn/FacebookUI/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
