@@ -9,5 +9,7 @@
     <string name="audioVSvideo">Audio and video rooms</string>
     <string name="tvCreateRoom">Create Room</string>
 
+    <string name="createStory">Create story</string>
+
 
 </resources>

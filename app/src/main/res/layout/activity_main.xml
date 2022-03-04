@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/darker_gray"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:id="@+id/rlTitle"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="100dp"
         android:background="@color/white">
 
         <RelativeLayout
@@ -31,7 +31,7 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
                 android:padding="2dp"
-                android:src="@drawable/grey" />
+                android:src="#f2f2f2" />
 
             <ImageView
                 android:id="@+id/ivMessenger"
@@ -47,7 +47,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_toLeftOf="@+id/ivMessenger"
                 android:padding="2dp"
-                android:src="@drawable/grey" />
+                android:src="#f2f2f2" />
 
 
             <ImageView
@@ -63,7 +63,7 @@
         <RelativeLayout
             android:id="@+id/rlBar"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="35dp"
             android:layout_below="@+id/rlHead"
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
@@ -112,7 +112,7 @@
     <RelativeLayout
         android:id="@+id/rlStatus"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="65dp"
         android:layout_below="@+id/rlTitle"
         android:layout_marginTop="0.5dp"
         android:background="@color/white">
@@ -346,16 +346,143 @@
                     android:layout_marginStart="15dp"
                     android:layout_toRightOf="@+id/civAvatar_4"
                     android:src="@drawable/avatar_5" />
-
-
             </RelativeLayout>
 
         </RelativeLayout>
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/rlStory"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/rlContact"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlprofileStory"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#f2f2f2"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/border3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="185dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/createStory"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="120dp"
+                    android:backgroundTint="#0f90f2"
+                    android:tint="@color/white"
+                    app:backgroundTint="@color/white"
+                    app:borderWidth="2dp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlStory1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/rlprofileStory">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#f2f2f2"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/batman" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:id="@+id/rlStory2"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/rlStory1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#f2f2f2"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/moon" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/rlStory"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                src
 
 
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
 
 
 </RelativeLayout>
