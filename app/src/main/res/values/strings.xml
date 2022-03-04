@@ -10,6 +10,13 @@
     <string name="tvCreateRoom">Create Room</string>
 
     <string name="createStory">Create story</string>
+    <string name="pageTitle">VNExpress</string>
+    
+    <string name="time">4 minutes ago</string>
+    <string name="batman">The Batman</string>
+    <string name="moon">Moon Fall</string>
+
+    <string name="infoText">Firstly thank for the answer. But I want to achieve exactly the same rendering with a black baground instead of a transparent one.</string>
 
 
 </resources>

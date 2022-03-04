@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@android:color/darker_gray"
+    android:background="#d6d2d2"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -427,6 +427,16 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/batman" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="185dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/batman"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
             </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
@@ -453,36 +463,111 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/moon" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="185dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/moon"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
             </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
 
     </RelativeLayout>
-    
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:layout_below="@+id/rlStory"
-        android:background="@color/white"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
 
         <RelativeLayout
+            android:id="@+id/rlPageInfo"
             android:layout_width="match_parent"
             android:layout_height="60dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="wrap_content"
+                android:id="@+id/civPage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/vnexpress"
+                app:civ_border_color="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:id="@+id/pageName"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/civPage">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/pageTitle"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_baseline_close_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toLeftOf="@+id/ivClose"
+                    android:src="@drawable/ic_baseline_more_horiz_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                src
+                android:layout_below="@+id/pageName"
+                android:layout_toRightOf="@+id/civPage">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/time"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" />
 
 
+            </RelativeLayout>
 
         </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/rlPageInfo"
+            android:background="#d6f783">
 
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/infoText"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+        </RelativeLayout>
 
     </RelativeLayout>
-
 
 </RelativeLayout>
